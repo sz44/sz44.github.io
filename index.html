@@ -1,23 +1,32 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <title>Reviews Project</title>
+	</head>
+	<body>
+		<p>
+      Privet Borya,
 
-<div class="home">
+      Thank you for suggesting this potential job opportunity. 
+      Below are some links to my projects. I haven't created a portfolio website for myself, but I did find some projects that might be interesting and deployed them. 
+      There is not a lot here and they are not big. My studies of web development have mainly been on the server side logic, so I know python/Javascript/Nodejs/C, better than html/css. My skills in design are not strong.
+      However, With some time I could build a sample website that would be more relevant for this situation.
+    </p>
+    <p>
+      Web widgets:
+      Reviews - https://simple-reviews.vercel.app/
+      counter - https://simple-counter.vercel.app/
+      color flipper - https://simple-color-flipper.vercel.app/
 
-  <h1 class="page-heading">Posts</h1>
+      Games:
+      Minesweeper - https://p5js-minesweeper.vercel.app/
+      Memory game - https://simon-game-sepia.vercel.app/
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+      Code art:
+      Bounce - https://p5js-dvdbounce.vercel.app/
+      Procedural sky - https://p5js-clouds.vercel.app/
+    </p>
+	</body>
+</html>
