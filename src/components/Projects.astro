@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import { getEntries, getEntry, render } from 'astro:content';
+
+// Load all Markdown files from the 'projects' collection
+const projects = await getCollection('projects');
+// const projects = await getEntries(projectsCollection)
+
+// import {Content, rawContent} from '../projects/canvasExperiments.md'
+---
+<div id="container">
+  <h2>projects</h2>
+  <div>
+  {projects.map(async (project) => {
+    const {Content} = await render(project);
+    return (
+      <article>
+        <Content />
+      </article>
+    )
+  }
+  )}
+  </div>
+</div>
+
+<style>
+  #container {
+    flex-grow: 1;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+</style>
