@@ -1,7 +1,23 @@
+---
+import { getCollection, render } from "astro:content";
+
+const projects = await getCollection("projects");
+
+console.log(projects);
+//sort on project.data.order
+projects.sort((a, b) => a.data.order - b.data.order);
+---
+
 <div id="container">
   <h2>projects</h2>
   <div id="projects">
-    <article>
+    {
+      projects.map(async (project) => {
+        const { Content } = await render(project);
+        return <article><Content /></article>;
+      })
+    }
+    <!-- <article>
       <h2>Photo/Image masking tool</h2>
       <a href="https://sz44.github.io/photo-masking-tool/">live link</a>
       <p>
@@ -19,26 +35,7 @@
         </p>
       </p>
       <img src="" alt="">
-    </article>
-    <article>
-      <h2>Photo/Image masking tool</h2>
-      <a href="https://sz44.github.io/photo-masking-tool/">live link</a>
-      <p>
-        Web based tool that allows creating image masks by painting over an
-        image and downloading it. Images auto adjusted to fit broswer windows,
-        but retain dimentions when downloaded. Current output format is .png
-
-        <p>
-          Three options for background:
-          <ul>
-            <li>solid color</li>
-            <li>transparent</li>
-            <li>original image</li>
-          </ul>
-        </p>
-      </p>
-      <img src="" alt="">
-    </article>
+    </article> -->
   </div>
 </div>
 
@@ -52,6 +49,17 @@
     justify-content: start;
     align-items: center;
   }
+  article {
+    border-bottom: 1px solid white;
+    img {
+      height: 500px;
+    }
+    a {
+      color: #00b3ff;
+      text-decoration: none;
+    }
+  }
+
   #projects {
   }
 </style>

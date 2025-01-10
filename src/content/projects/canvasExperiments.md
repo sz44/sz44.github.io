@@ -1,8 +1,8 @@
 ---
-title: "HTML Canvas experiments" 
-description: "desc"
+date: "2025-10-20"
+order: 1
 ---
-# HTML Canvas projects
+# HTML Canvas projects 
 
 * Fire sim
 * bee/fly behaviour

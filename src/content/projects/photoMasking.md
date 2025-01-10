@@ -1,3 +1,7 @@
+---
+date: "2025-10-20"
+order: 3
+---
 # Photo/Image masking tool
 
 Web based tool that allows creating image masks by painting over an image and downloading it.
