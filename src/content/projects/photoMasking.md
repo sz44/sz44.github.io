@@ -13,6 +13,6 @@ Three options for background:
 * transparent
 * original image
 
-## [live link](https://sz44.github.io/photo-masking-tool/)
+### [live link](https://sz44.github.io/photo-masking-tool/)
 
 ![image](/src/assets/photomasktool.png)

@@ -8,6 +8,6 @@ Falling sand simulator.
 ## Controls
 Mouse - left click to generate sand
 
-## [live link](https://sz44.github.io/canvas_sand/)
+### [live link](https://sz44.github.io/canvas_sand/)
 
 ![image](/src/assets/fallingsand.png)

@@ -6,6 +6,6 @@ order: 2
 Game based on the classic Wolfenstein 3D
 Submitted for a game hackathon
 
-## [live link](https://main.d3kahfarvylhxu.amplifyapp.com/)
+### [live link](https://main.d3kahfarvylhxu.amplifyapp.com/)  &nbsp;|&nbsp; [github](https://github.com/sz44/canvasRetroFPS)
 
 ![image](/src/assets/retrofps.png)
