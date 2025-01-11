@@ -17,14 +17,13 @@ for (const id of order) {
 
 // projects.sort((a, b) => a.data.order - b.data.order);
 ---
-
 <div id="container">
   <h2>projects</h2>
   <div id="projects">
     {
       orderedProjects.map(async (project) => {
         const { Content } = await render(project);
-        return <article><Content /></article>;
+        return <article><Content /></article>
       })
     }
   </div>
@@ -33,7 +32,7 @@ for (const id of order) {
 <style>
   #container {
     flex-grow: 1;
-    max-width: 60rem;
+    /* max-width: 60rem; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -42,12 +41,23 @@ for (const id of order) {
   }
   article {
     border-bottom: 1px solid white;
-    img {
+    /* max-width: 60rem; */
+    width: 100vw;
+    p {
+      max-width: 40rem;
+      /* margin: auto; */
+    }
+    p img {
+      display: block;
       height: 500px;
+      margin: auto;
     }
     a {
       color: #00b3ff;
       text-decoration: none;
+    }
+    h2 {
+      text-align: center;
     }
     h3 {
       margin: 0;
