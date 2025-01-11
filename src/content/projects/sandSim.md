@@ -1,12 +1,13 @@
 ---
 date: "2025-10-20"
-order: 5
+order: 4
 ---
-## Description 
+## Falling sand
 Falling sand simulator.
 
 ## Controls
 Mouse - left click to generate sand
 
-## Live version
-https://sz44.github.io/canvas_sand/
+## [live link](https://sz44.github.io/canvas_sand/)
+
+![image](/src/assets/fallingsand.png)

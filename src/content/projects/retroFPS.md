@@ -1,11 +1,11 @@
 ---
 date: "2025-10-20"
-order: 4
+order: 2
 ---
-## Description 
+## FPS style maze game
 Game based on the classic Wolfenstein 3D
+Submitted for a game hackathon
 
-Submitted for the LearnWithJason.dev + Amazon mini hackathon
+## [live link](https://main.d3kahfarvylhxu.amplifyapp.com/)
 
-## Live version
-https://main.d3kahfarvylhxu.amplifyapp.com/
+![image](/src/assets/retrofps.png)

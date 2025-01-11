@@ -1,8 +1,8 @@
 ---
 date: "2025-10-20"
-order: 1
+order: 5
 ---
-# HTML Canvas projects 
+## HTML Canvas experiments 
 
 * Fire sim
 * bee/fly behaviour
