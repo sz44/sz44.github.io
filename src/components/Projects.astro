@@ -22,12 +22,13 @@ for (const id of order) {
   <div id="projects">
     {
       orderedProjects.map(async (project) => {
-        console.log(project.data.image)
         const { Content } = await render(project);
         return (
         <article>
           <img src={project.data.image.url} alt=""/>
-          <Content />
+          <div class="text">
+            <Content />
+          </div>
         </article>)
       })
     }
@@ -46,16 +47,18 @@ for (const id of order) {
   }
   article {
     border-bottom: 1px solid white;
-    display: flow-root;
+    display: flex;
+    gap: 1rem;
     padding: 1rem 0;
+    /* min-width: 64rem; */
     p {
-      /* max-width: 40rem; */
+      /* max-width: 30rem; */
     }
     img {
       height: 300px;
       max-width: 450px;
-      float: right;
-      margin-left: 20px;
+      /* float: right; */
+      /* margin-left: 20px; */
     }
     a {
       color: #00b3ff;
