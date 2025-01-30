@@ -1,6 +1,10 @@
 ---
-date: "2025-10-20"
-order: 3
+title: 'Image masking tool'
+pubDate: 2022-07-01
+image:
+    url: '/src/assets/photomasktool.png'
+    alt: 'App interface'
+tags: ["javascript"]
 ---
 ## Photo/Image masking tool
 
@@ -14,4 +18,3 @@ Three options for background:
 * original image 
 
 ### [live link](https://sz44.github.io/photo-masking-tool/)
-![image](/src/assets/photomasktool.png)

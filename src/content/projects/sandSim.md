@@ -1,6 +1,10 @@
 ---
-date: "2025-10-20"
-order: 4
+title: 'Falling Sand Sim'
+pubDate: 2022-07-01
+image:
+    url: '/src/assets/fallingsand.png'
+    alt: 'Image'
+tags: ["javascript"]
 ---
 ## Falling sand
 Falling sand simulator.
@@ -9,5 +13,3 @@ Falling sand simulator.
 Mouse - left click to generate sand
 
 ### [live link](https://sz44.github.io/canvas_sand/)
-
-![image](/src/assets/fallingsand.png)

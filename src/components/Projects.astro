@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 
-const order = ["fastmaskai", "photoMasking", "curve3D", "retroFPS", "sandSim", "canvasExperiments"];
+const order = ["PDFPacker", "fastmaskai", "photoMasking", "curve3D", "retroFPS", "sandSim", "canvasExperiments"];
 
 const projects = await getCollection("projects");
 
@@ -22,8 +22,13 @@ for (const id of order) {
   <div id="projects">
     {
       orderedProjects.map(async (project) => {
+        console.log(project.data.image)
         const { Content } = await render(project);
-        return <article><Content /></article>
+        return (
+        <article>
+          <img src={project.data.image.url} alt=""/>
+          <Content />
+        </article>)
       })
     }
   </div>
@@ -32,7 +37,7 @@ for (const id of order) {
 <style>
   #container {
     flex-grow: 1;
-    /* max-width: 60rem; */
+    max-width: 64rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -41,23 +46,20 @@ for (const id of order) {
   }
   article {
     border-bottom: 1px solid white;
-    /* max-width: 60rem; */
-    width: 100vw;
+    display: flow-root;
+    padding: 1rem 0;
     p {
-      max-width: 40rem;
-      /* margin: auto; */
+      /* max-width: 40rem; */
     }
-    p img {
-      display: block;
-      height: 500px;
-      margin: auto;
+    img {
+      height: 300px;
+      max-width: 450px;
+      float: right;
+      margin-left: 20px;
     }
     a {
       color: #00b3ff;
       text-decoration: none;
-    }
-    h2 {
-      text-align: center;
     }
     h3 {
       margin: 0;

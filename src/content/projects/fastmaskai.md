@@ -1,6 +1,10 @@
 ---
-date: "2025-10-20"
-order: 1
+title: 'AI image masking tool'
+pubDate: 2022-07-01
+image:
+    url: '/src/assets/maskedDog.png'
+    alt: 'App interface'
+tags: ["javascript", "Typescript", "Astro", "AI"]
 ---
 ## AI image masking tool
 SAAS web app. 
@@ -9,6 +13,5 @@ A handy tool for all kinds of image editing work. Especially useful when working
 
 Tech: HTML, CSS, JS, Typescript, Astro, Stripe, Transformers.js, WebWorkers, Cloudflare, Sendgrid
 
-### [live link](https://fastmaskai.com)
 
-![image](/src/assets/maskedDog.png)
+### [live link](https://fastmaskai.com)

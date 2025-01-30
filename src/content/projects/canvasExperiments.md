@@ -1,6 +1,10 @@
 ---
-date: "2025-10-20"
-order: 5
+title: 'canvas experiments'
+pubDate: 2022-07-01
+image:
+    url: '/src/assets/packingPDFscreenshot.png'
+    alt: 'canvas experiments'
+tags: ["javascript", "p5js"]
 ---
 ## HTML Canvas experiments 
 
