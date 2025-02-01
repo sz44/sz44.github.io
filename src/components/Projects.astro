@@ -17,6 +17,7 @@ for (const id of order) {
 }
 
 // projects.sort((a, b) => a.data.order - b.data.order);
+import bezierTo3D from "../assets/bezierTo3D.png";
 ---
 <div id="container">
   <h2>projects</h2>
@@ -26,7 +27,6 @@ for (const id of order) {
         const { Content } = await render(project);
         return (
         <article>
-
           {/* <img src={project.data.image.url} width="450" height="300" alt=""/> */}
           <Image src={project.data.image.url} alt={project.data.image.alt} width="450" height="300"/>
           <div class="text">
