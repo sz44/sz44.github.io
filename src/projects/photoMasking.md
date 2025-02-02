@@ -2,7 +2,7 @@
 title: 'Image masking tool'
 pubDate: 2022-07-01
 image:
-    url: '/src/assets/photomasktool.png'
+    url: '/src/images/photomasktool.png'
     alt: 'App interface'
 tags: ["javascript"]
 ---
@@ -17,4 +17,4 @@ Three options for background:
 * transparent
 * original image 
 
-### [live link](https://sz44.github.io/photo-masking-tool/)
+### [live link](https://sz44.github.io/photo-masking-tool/) &nbsp;|&nbsp; [github](https://github.com/sz44/photo-masking-tool)

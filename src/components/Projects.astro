@@ -1,33 +1,24 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getEntry, render } from "astro:content";
 import { Image } from "astro:assets";
 
 const order = ["PDFPacker", "fastmaskai", "photoMasking", "curve3D", "retroFPS", "sandSim"];
 
-const projects = await getCollection("projects");
-
-const projectsMap = new Map();
-for (let project of projects) {
-  projectsMap.set(project.id, project);
-}
-
 const orderedProjects = [];
-for (const id of order) {
-  orderedProjects.push(projectsMap.get(`${id}.md`));
+for (let id of order) {
+  let project = await getEntry("projects", id.toLowerCase());
+  orderedProjects.push(project);
 }
-
-// projects.sort((a, b) => a.data.order - b.data.order);
-import bezierTo3D from "../assets/bezierTo3D.png";
 ---
 <div id="container">
-  <h2>projects</h2>
+  <h2>PROJECTES</h2>
   <div id="projects">
     {
       orderedProjects.map(async (project) => {
+        if (!project) return;
         const { Content } = await render(project);
         return (
         <article>
-          {/* <img src={project.data.image.url} width="450" height="300" alt=""/> */}
           <Image src={project.data.image.url} alt={project.data.image.alt} width="450" height="300"/>
           <div class="text">
             <Content />

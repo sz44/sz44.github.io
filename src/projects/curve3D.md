@@ -2,7 +2,7 @@
 title: '3D curve visualizer'
 pubDate: 2022-07-01
 image:
-    url: '/src/assets/bezierTo3D.png'
+    url: '/src/images/bezierTo3D.png'
     alt: 'Curve in 3D'
 tags: ["javascript", "p5js"]
 ---

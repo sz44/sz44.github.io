@@ -2,7 +2,7 @@
 title: 'Retro FPS game'
 pubDate: 2022-07-01
 image:
-    url: '/src/assets/retrofps.png'
+    url: '/src/images/retrofps.png'
     alt: 'Game image'
 tags: ["javascript"]
 ---
@@ -10,5 +10,5 @@ tags: ["javascript"]
 Game based on the classic Wolfenstein 3D
 Submitted for a game hackathon
 
-### [live link](https://main.d3kahfarvylhxu.amplifyapp.com/)  &nbsp;|&nbsp; [github](https://github.com/sz44/canvasRetroFPS)
+### [live link](https://main.d3kahfarvylhxu.amplifyapp.com/) &nbsp;|&nbsp; [github](https://github.com/sz44/canvasRetroFPS)
 

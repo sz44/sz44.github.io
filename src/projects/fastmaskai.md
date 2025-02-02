@@ -2,7 +2,7 @@
 title: 'AI image masking tool'
 pubDate: 2022-07-01
 image:
-    url: '/src/assets/maskedDog.png'
+    url: '/src/images/maskedDog.png'
     alt: 'App interface'
 tags: ["javascript", "Typescript", "Astro", "AI"]
 ---
